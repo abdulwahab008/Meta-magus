@@ -1,0 +1,110 @@
+.terminal-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background-color: #1e1e1e;
+  color: #cccccc;
+  font-family: 'Consolas', monospace;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  resize: vertical;
+  overflow: hidden;
+}
+
+.terminal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #323233;
+  border-bottom: 1px solid #454545;
+}
+
+.terminal-tabs {
+  display: flex;
+}
+
+.terminal-tab {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.terminal-tab.active {
+  background-color: #1e1e1e;
+}
+
+.terminal-controls {
+  display: flex;
+  align-items: center;
+}
+
+.terminal-control-button {
+  background-color: transparent;
+  color: #cccccc;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.terminal-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.terminal-input-container {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #1e1e1e;
+}
+
+.terminal-path {
+  color: #569cd6;
+  margin-right: 5px;
+}
+
+.terminal-input {
+  background-color: transparent;
+  color: #cccccc;
+  border: none;
+  flex-grow: 1;
+  outline: none;
+}
+
+.terminal-output-line {
+  align-items: flex-start;
+  margin-bottom: 5px;
+}
+
+.terminal-output-command {
+  float:left;
+  color: #569cd6;
+}
+
+.terminal-output-result {
+  float:left;
+  color: #cccccc;
+}
+
+.terminal-output-error {
+  float:left;
+  color: #f44747;
+}
+
+.terminal-resize-handle {
+  width: 100%;
+  height: 5px;
+  background-color: #323233;
+  cursor: ns-resize;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

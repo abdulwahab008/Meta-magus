@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.content-area {
+  text-align: center;
+  padding: 20px;
+}
+
+.content-area img {
+  max-width: 90%;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.content-area p {
+  margin-top: 10px;
+}
+
+.form-data-display {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.form-data-display h3 {
+  margin-bottom: 16px;
+  font-size: 1.5em;
+  color: #333;
+  text-align: center;
+}
+
+.form-data-display table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #0e0909;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.form-data-display th, .form-data-display td {
+  border: 1px solid #100b0b;
+  padding: 12px;
+  text-align: left;
+  font-size: 1em;
+  margin-right: 50px;
+}
+
+.form-data-display th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+  margin-right: 50px;
+}
+
+.form-data-display td {
+  background-color: #fff;
+}
+
+.form-data-display tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+
+.form-data-display tr:hover td {
+  background-color: #e9e9e9;
+}

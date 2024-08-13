@@ -1,0 +1,266 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  background-color: #e0e0e0;
+}
+
+.main {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.file-explorer {
+  background-color: #f9f9f9;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+  height: 100%;
+  overflow: auto;
+}
+
+.file-explorer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.file-explorer li {
+  font-size: small;
+  margin: 5px 0;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.file-explorer li:hover {
+  background-color: #e0e0e0;
+}
+
+.content-area {
+  flex: 1;
+  padding: 10px;
+  overflow: auto;
+}
+
+.blank-area, .content-area pre {
+  white-space: pre-wrap;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  height: 100%;
+  overflow: auto;
+}
+
+.content-area pre code {
+  display: block;
+  padding: 10px;
+  background: #2d2d2d;
+  color: #ccc;
+  border-radius: 5px;
+}
+
+.content-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.terminal-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1e1e1e;
+  z-index: 1000;
+}
+
+.resize-handle-x {
+  width: 5px;
+  height: 100%;
+  background-color: #ccc;
+  cursor: col-resize;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.resize-handle-y {
+  width: 100%;
+  height: 5px;
+  background-color: #ccc;
+  cursor: row-resize;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.app {
+  text-align: center;
+}
+
+.app-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.app-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.app-link {
+  color: #61dafb;
+}
+
+
+/* .content-area {
+  text-align: center;
+  padding: 20px;
+} */
+
+.content-area img {
+  max-width: 90%;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.content-area p {
+  margin-top: 10px;
+}
+
+
+.form-data-display {
+  padding: 15px;
+  font-family: 'Arial', sans-serif;
+}
+
+.form-data-display h3 {
+  margin-bottom: 16px;
+  font-size: 1em;
+  color: #333;
+  text-align: center;
+}
+
+.form-data-display table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #0e0909;
+  margin-top: 20px;
+  
+}
+
+.form-data-display th, .form-data-display td {
+  border: 1px solid #100b0b;
+  padding: 12px;
+  text-align: left;
+  font-size: 0.8em;
+ 
+}
+
+.form-data-display th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+  
+}
+
+.form-data-display td {
+  background-color: #fff;
+}
+
+.form-data-display tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+
+.form-data-display tr:hover td {
+  background-color: #e9e9e9;
+}
+.content-area {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blank-area {
+  margin: 20px 0;
+}
+
+.prediction-container {
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.prediction-container h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.prediction-values {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2em;
+  color: #555;
+  white-space: pre-wrap;
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+}
+.prediction-images {
+  display: flex;
+  justify-content: space-between; 
+  align-items : center;
+  gap: 10px; 
+}
+
+.prediction-images img {
+  max-width: 48%;
+  max-height: 600px; 
+  width: auto;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+

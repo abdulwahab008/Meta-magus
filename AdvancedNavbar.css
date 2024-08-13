@@ -1,0 +1,141 @@
+.advanced-navbar {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-bottom: 1px solid #333;
+  padding: 8px 14px;
+}
+
+.main-tabs {
+  display: flex;
+  align-items: center;
+  background-color: #2b2b2b;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.main-tabs button {
+  background-color: transparent;
+  border: none;
+  padding: 7px 11px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.main-tabs button i {
+  margin-right: 12px; 
+}
+
+.main-tabs button:hover, .main-tabs button.active {
+  background-color: #3a3a3a;
+  color: #4CAF50;
+}
+
+.sub-tabs, .tertiary-tabs {
+  display: flex;
+  padding: 5px;
+  background-color: #2b2b2b;
+  border-radius: 5px;
+  margin-top: 5px;
+  flex-wrap: wrap;
+}
+
+.sub-tabs button, .tertiary-tabs button {
+  background-color: #3a3a3a;
+  border: none;
+  padding: 7px 11px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sub-tabs button i, .tertiary-tabs button i {
+  margin-right: 8px;
+}
+
+.sub-tabs button:hover, .tertiary-tabs button:hover,
+.sub-tabs button.active, .tertiary-tabs button.active {
+  background-color: #4CAF50;
+  color: #ffffff;
+}
+
+.upload-csv, .predict-button {
+  margin-left: auto;
+  background-color: #4CAF50;
+  color: white;
+  padding: 7px 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.upload-csv:hover, .predict-button:hover, .upload-csvfile:hover {
+  background-color: #45a049;
+}
+
+.loading-animation {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  margin-top: 8px;
+}
+
+.input-group label {
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.input-group input {
+  background-color: #000; /* Black background */
+  padding: 4px 6px; /* Smaller padding */
+  font-size: 12px; /* Smaller font size */
+  border: 1px solid #555; /* Darker border color */
+  border-radius: 5px;
+  color: #fff; /* White text color */
+  margin-right: 10px; /* Added margin for spacing */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.input-group input:focus {
+  border-color: #4CAF50; /* Border color on focus */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Shadow effect on focus */
+}
+
+
+
+.input-groups{
+  
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-bottom: 2px;
+ 
+}
+
+
+.upload-csvfile{
+  margin-left: auto;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+}
